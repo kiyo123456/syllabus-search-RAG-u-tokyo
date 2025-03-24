@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シラバス検索</title>
+    <script>
+        function searchSyllabus() {
+            let query = document.getElementById("query").value;
+            let searchType = document.getElementById("searchType").value;
+            let listQuery = document.getElementById("listQuery").value;
+            let evalCategory = document.getElementById("evalCategory").value;
+            let evalPercentage = document.getElementById("evalPercentage").value;
+
+            fetch("/search", {
+                method: "POST",
+                body: new URLSearchParams({ 
+                    "query": query, 
+                    "searchType": searchType,
+                    "listQuery": listQuery,
+                    "evalCategory": evalCategory,
+                    "evalPercentage": evalPercentage
+                }),
+                headers: { "Content-Type": "application/x-www-form-urlencoded" }
+            })
+            .then(response => response.json())
+            .then(data => {
+                let resultDiv = document.getElementById("results");
+                resultDiv.innerHTML = "";
+                if (data.error) {
+                    resultDiv.innerHTML = `<p style="color: red;">${data.error}</p>`;
+                } else {
+                    data.forEach(item => {
+                        resultDiv.innerHTML += `<p><strong>${item.title}</strong> (スコア: ${item.score || "なし"})</p>`;
+                    });
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>シラバス検索</h1>
+    <input type="text" id="query" placeholder="検索ワードを入力" />
+    
+    <select id="searchType">
+        <option value="vector">ベクトル検索</option>
+        <option value="exact">完全一致検索</option>
+        <option value="partial">部分一致検索</option>
+        <option value="list">リスト検索</option>
+        <option value="word">単語検索</option>
+        <option value="hyoka">成績評価検索</option>
+    </select>
+
+    <!-- リスト検索用の入力ボックス -->
+    <input type="text" id="listQuery" placeholder="例: 月1, 火2（カンマ区切り）">
+
+    <!-- 成績評価のフィルタ -->
+    <input type="text" id="evalCategory" placeholder="評価基準（例: 平常点, 期末レポート）">
+    <input type="number" id="evalPercentage" placeholder="パーセンテージ（例: 50）" min="0" max="100">
+
+    <button onclick="searchSyllabus()">検索</button>
+    <div id="results"></div>
+</body>
+</html>
+
+
+
