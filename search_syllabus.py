@@ -43,22 +43,33 @@ class SyllabusVectorSearch:
         return sorted(results, key=lambda x: x["score"], reverse=False)
 
     def search_exact(self, key, value):
-        """完全一致検索"""
-        return [entry for entry in self.data if key in entry and entry[key] == value]
+        """完全一致検索（大文字小文字無視）"""
+        value = value.lower()
+        return [entry for entry in self.data if key in entry and str(entry[key]).lower() == value]
 
     def search_partial(self, key, value):
-        """部分一致検索"""
-        return [entry for entry in self.data if key in entry and value in str(entry[key])]
+        """部分一致検索（大文字小文字無視）"""
+        value = value.lower()
+        return [entry for entry in self.data if key in entry and value in str(entry[key]).lower()]
 
     def search_list(self, key, values):
         """リスト検索（指定リストに1つでも該当するもの）"""
-        values_set = set(values)
+        values_set = set(v.strip() for v in values)
         return [entry for entry in self.data if key in entry and isinstance(entry[key], list) and values_set & set(entry[key])]
 
     def search_word(self, query):
-        """単語検索（テキストデータ内に単語が含まれるか）"""
-        words = query.split()
-        return [entry for entry in self.data if any(word in entry["keywordtexts"] for word in words)]
+        """単語検索（大文字小文字無視、キーワードやタイトル、説明を対象）"""
+        words = [w.lower() for w in query.split()]
+        results = []
+        for entry in self.data:
+            combined_text = " ".join([
+                entry.get("title", ""),
+                entry.get("keywordtexts", ""),
+                entry.get("description", "")
+            ]).lower()
+            if any(word in combined_text for word in words):
+                results.append(entry)
+        return results
 
     def search_hyoka(self, eval_category, min_ratio):
         """成績評価検索"""
@@ -104,6 +115,7 @@ def search():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
 
 
