@@ -1,0 +1,130 @@
+[
+    {
+        "page": 1,
+        "table": [
+            [
+                "時間割\nコード",
+                "開講",
+                "授業科目名",
+                "担当教員",
+                "所属",
+                "曜限",
+                "対象"
+            ],
+            [
+                "30976",
+                "Ｓ",
+                "スポーツ・身体運動実\n習Ｉ(PEAK)",
+                "竹下 大介、\n金子 直嗣",
+                "PEAK前期",
+                "木 4",
+                "2年 文科 理科"
+            ],
+            [
+                "講義題目 Recreational activities for the promotion of fitness and wellness\n授業の目標概要 Provide an understanding of the fitness components and the importance of good strength, flexibility and endurance in physical health\nand wellness. Expose students to variety of activities that can be incorporated into a daily lifestyle. Apply the training principles for\nthe management of the fitness components.\n成績評価方法 Attendance and reports.\n教科書 教科書は使用しない。／Will not use textbook\nガイダンス 第一回授業日に行う。／Will conduct guidance at first time",
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ]
+        ]
+    },
+    {
+        "page": 1,
+        "table": [
+            [
+                "時間割\nコード",
+                "開講",
+                "授業科目名",
+                "担当教員",
+                "所属",
+                "曜限",
+                "対象"
+            ],
+            [
+                "30236",
+                "Ｓ",
+                "身体運動科学(PEAK)",
+                "竹下 大介、\n金子 直嗣",
+                "PEAK前期",
+                "月 5",
+                "1年 文科 理科\n2年 文科 理科"
+            ],
+            [
+                "講義題目 Exercise and health science: Application of physiological concepts for the promotion of fitness and wellness\n授業の目標概要 The course is designed to provide a theoretical basis for understanding the physiological responses to exercise and the adaptations\nthat occur during exercise. The lecture/discussion areas include the wellness concept, nutrition and support system of the body\n(cardiovascular, respiratory, metabolic, musculoskeletal and nervous) function. Upon successful completion of the course, students\nwill understand the physiological adaptations that occur following exercise training, the benefits of exercise and the health risks\nassociated with inactivity.\n成績評価方法 Basically by reports\n教科書 教科書は使用しない。／Will not use textbook\nガイダンス 第一回授業日に行う。／Will conduct guidance at first time",
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ]
+        ]
+    },
+    {
+        "page": 1,
+        "table": [
+            [
+                "時間割\nコード",
+                "開講",
+                "授業科目名",
+                "担当教員",
+                "所属",
+                "曜限",
+                "対象"
+            ],
+            [
+                "30742",
+                "Ｓ",
+                "エネルギー工学の基礎\n(PEAK)",
+                "河野 龍興",
+                "PEAK前期",
+                "水 4",
+                "1年 文科 理科\n2年 文科 理科"
+            ],
+            [
+                "講義題目 The future of carbon neutral environmental technology\n授業の目標概要 My lecture on cutting-edge technology related to renewable energy, storage batteries and hydrogen energy\n成績評価方法 Attendance and reports will be used for evaluation.\n教科書 教科書は使用しない。／Will not use textbook\nガイダンス 特に行わない。／Will not conduct guidance",
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ]
+        ]
+    },
+    {
+        "page": 1,
+        "table": [
+            [
+                "時間割\nコード",
+                "開講",
+                "授業科目名",
+                "担当教員",
+                "所属",
+                "曜限",
+                "対象"
+            ],
+            [
+                "30640",
+                "Ｓ",
+                "生態学の基礎(PEAK)",
+                "辻本 惠",
+                "PEAK前期",
+                "水 2",
+                "1年 文科 理科\n2年 文科 理科"
+            ],
+            [
+                "講義題目 Ecology\n授業の目標概要 To provide students with a foundational understanding of ecology and evolution\n成績評価方法 Participation: 30%In-class final exam: 70%\n教科書 教科書は使用しない。／Will not use textbook\nガイダンス 特に行わない。／Will not conduct guidance",
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ]
+        ]
+    }
+]

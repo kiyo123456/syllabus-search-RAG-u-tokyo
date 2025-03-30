@@ -1,0 +1,72 @@
+[
+    {
+        "page": 1,
+        "table": [
+            [
+                "時間割\nコード",
+                "開講",
+                "講義題目",
+                "担当教員",
+                "所属",
+                "曜限",
+                "単位",
+                "対象"
+            ],
+            [
+                "31711",
+                "Ｓ",
+                "グローバル共創型イノベーションプログ\nラム「Innovation for Well-being -GDPを超\nえる世界を創り出す挑戦-」\nGlobal Co-creation Innovation Program:\nInnovation for Well-being -The Challenge of\nCreating a World Beyond GDP-",
+                "吉田 塁",
+                "工学部",
+                "水 2",
+                "2",
+                "1年 文科 理科\n2年 文科 理科"
+            ],
+            [
+                "授業の目標概要 [概要 / Summary]\n私達はみなさんに日本だけでなく世界でも活躍できるようになってもらいたいと考えています。そのような思いを背\n景に、本授業では、「Innovation for Well-being -GDPを超える世界を創り出す挑戦-」をテーマとして、経済成長のみにフ\nォーカスしない事業の提案を行ってもらいます。\n授業を通して、これからの時代に必要不可欠となる、仲間と共創する力、イノベーションを創造する力、国際的な仲間\nと関係性を創り出す力などを培うと同時に、これからの時代の潮流、日本と他国の社会・経済・環境の現状・未来、そ\nして、国際的な共創活動を通じた自分の新たな可能性への理解を深めることができます。\n国連開発計画とシティ・ファウンデーションの共催で、起業家エコシステムの強化を目的に、2017年にアジア太平洋地\n域で発足した若年層の社会起業家コミュニティである Youth Co:Lab の協力も得て、世界的に活躍する若手起業家と交\n流する機会も設けますので、是非積極的に参加してください。\n[本授業の特徴 / Features of the course]\n・本授業は、実践を重視する授業で、課題発見・解決をしてもらえるような仕掛けを多く設けます。例えば、世界の潮\n流、課題の発見の仕方、課題解決の方法、解決策をビジネスとして成り立たせる方法などを体験しながら学べるワーク\nを授業の中に多く組み込みます。\n・本授業では、学生と教員の対話、学生同士の対話から学べることが多いと考えるため、ペアワークやグループワーク\nなどアクティブラーニングで学ぶ機会を多く作ります。\n・本授業は、全学部生、全大学院生向けに開講するため、新入生から博士学生まで幅広く受講できます。学年が異なる\n学生との交流の場としても機能させたいと考えていますので、横と縦のつながりを作ってもらえればと思います。\n・基本的に日本語で授業を行いますが、中間発表や最終発表では海外の起業家なども呼ぶ予定であることから、英語で\n発表してもらう予定です。\n・Slack を用いて、授業外でも交流できる場を設けます。\n------------------------------------------------------------\n※このゼミは4月8日（火）6限（18：45～）Zoomで行われる工学部合同説明会への参加を予定しています。\nZoomのURLは後日UTAS掲示板のお知らせにて周知いたします。\n------------------------------------------------------------\n成績評価方法 本授業は、最終的な成果物に加えて、授業自体への主体的・能動的な姿勢、各プロセスにおける共創活動へのリード・\n貢献、全体に対する存在価値（授業全体やチームへの良い影響力）などを総合して評価します。\n教科書 教科書は使用しない。／Will not use textbook\nガイダンス 第一回授業日に行う。／Will conduct guidance at first time",
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ]
+        ]
+    },
+    {
+        "page": 1,
+        "table": [
+            [
+                "時間割\nコード",
+                "開講",
+                "講義題目",
+                "担当教員",
+                "所属",
+                "曜限",
+                "単位",
+                "対象"
+            ],
+            [
+                "30705",
+                "Ｓ",
+                "Introductory course in linear\nalgebra, continued",
+                "松尾 厚",
+                "PEAK前期",
+                "水 3",
+                "2",
+                "1年 文科 理科\n2年 文科 理科"
+            ],
+            [
+                "授業の目標概要 Phenomena in natural and social sciences are usually complicated, and seldom described by linear equations. However, Linear Algebra\nis still powerful and effective in describing essential parts of the phenomena by linear approximation. Thus Linear Algebra has vast\napplications.\nLinear Algebra will further provide basics for considering linear spaces that appear in quantum mechanics or Fourier analysis. The\nideas in Linear Algebra are broadly utilized in sciences and engineering, including agriculture, medicine, and economy, as well as in\nmathematics and physics.\nAlthough Linear Algebra is simple and clear in theory, one needs to be familiar with abstract concepts in mathematics to properly\ndeal with it in practice. It is important for students to keep on deepening their understanding by working with exercise and related\nproblems.\n成績評価方法 Mainly by final examination, while the scores of mid-term exam, quizzes, homework notes, and attendance may possibly be taken\ninto account.\n教科書 プリントを配布する。／Will distribute handouts\nガイダンス 特に行わない。／Will not conduct guidance",
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ]
+        ]
+    }
+]
