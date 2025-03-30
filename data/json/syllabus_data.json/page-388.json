@@ -1,0 +1,107 @@
+[
+    {
+        "page": 1,
+        "table": [
+            [
+                "時間割\nコード",
+                "開講",
+                "講義題目",
+                "担当教員",
+                "所属",
+                "曜限",
+                "単位",
+                "対象"
+            ],
+            [
+                "30091",
+                "Ｓ",
+                "An introduction to the key physical\nprinciples underpinning the whole of\nmodern chemistry, focusing on key ideas\nfrom quantum mechanics, molecular\nstatistics and thermodynamics.",
+                "ウッドワード\nジョナサン\nロジャー",
+                "PEAK前期",
+                "月 2",
+                "2",
+                "1年 文科 理科\n2年 文科 理科"
+            ],
+            [
+                "授業の目標概要 This course aims to provide a comprehensive introduction to the key ideas in Physical Chemistry with a focus on Quantum Mechanics\nand Thermodynamics.\nBy the end of the course, students should be able to\n1) Explain the key principles of quantum mechanics.\n2) Rationalize the structure of atoms based on quantum mechanics.\n3) Explain why the periodic table has the form that it has.\n4) Describe the models of chemical bonding and use these models to predict the shapes and stabilities of molecules.\n5) Understand the structure of gases including the effects of intermolecular forces.\n6) Make calculations based on the kinetic theory of gases\n7) Understand the relationship between the properties of individual molecules and of bulk samples.\n8) Appreciate the significance of the Boltzmann distribution\n9) Understanding key ideas in thermodynamic including work, heat, enthalpy, entropy and Gibbs energy.\n10) Applying the basic concepts of thermodynamics to chemical equilibria\n成績評価方法 The course is evaluated based on in class participation and a final examination. The class participation is assessed in terms of the\nwork done on the classrooms problems as a team as well as the performance in live quizzes. Timely completion and submission of\nthe weekly worksheets is an important part of the assessment, so be advised to focus your attention on these from the outset.\n教科書 授業中に指示をする。／Will specify at class time\nガイダンス 特に行わない。／Will not conduct guidance",
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ]
+        ]
+    },
+    {
+        "page": 1,
+        "table": [
+            [
+                "時間割\nコード",
+                "開講",
+                "講義題目",
+                "担当教員",
+                "所属",
+                "曜限",
+                "単位",
+                "対象"
+            ],
+            [
+                "31673",
+                "Ｓ",
+                "国際政治の新しい課題",
+                "鈴木 一人",
+                "公共政策大学院",
+                "月 5",
+                "2",
+                "1年 文科 理科\n2年 文科 理科"
+            ],
+            [
+                "授業の目標概要 現代の国際政治は伝統的な国家間関係だけでは説明できない。一方ではアメリカの超大国としての地位が衰退し、中国\nの台頭やロシアなどの地域大国の影響力が増しているが、他方で、世界は自由貿易を基調とした、グローバル市場の統\n合が進み、高度に相互依存関係にある。こうした中で国際政治を学ぶ上で必要なコンセプトをきちんと理解し、その上\nで国際政治の現状を理解するための基礎となる知識と解釈を身につけることを目的とする。\n成績評価方法 授業での発表と議論：50%\n期末レポート：50%\n教科書 次の教科書を使用する。／Will use the following textbook田所昌幸・相良祥之国際政治経済学名古屋大学出版会2024年\nガイダンス 特に行わない。／Will not conduct guidance",
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ]
+        ]
+    },
+    {
+        "page": 1,
+        "table": [
+            [
+                "時間割\nコード",
+                "開講",
+                "講義題目",
+                "担当教員",
+                "所属",
+                "曜限",
+                "単位",
+                "対象"
+            ],
+            [
+                "31677",
+                "Ｓ",
+                "『世界開発報告』を読む\n2025S",
+                "森川 想",
+                "工学部",
+                "月 5",
+                "2",
+                "1年 文科 理科\n2年 文科 理科"
+            ],
+            [
+                "授業の目標概要 最新版の『世界開発報告』を会読します。講師は開発の専門家ではありませんが、開発を学ぶことは、先進国・途上国\nを問わず現代社会の課題を見つめることに直結すると考えています。報告そのものや、その根拠となっている文献をク\nリティカルに読み、議論することで、社会課題解決のために世界各国で行われているプラクティスの可能性や限界、科\n学技術（社会科学・自然科学）と公共政策の関係等について考え、見直す機会としていただければ幸いです。\nガイダンスは第一週にZoomにて実施します。この日時に出席できない方は別途相談もできますのでその場合はメール\nでご連絡ください。\n成績評価方法 議論への貢献\n教科書 教科書は使用しない。／Will not use textbook\nガイダンス 第一回授業日に行う。／Will conduct guidance at first time",
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ]
+        ]
+    }
+]

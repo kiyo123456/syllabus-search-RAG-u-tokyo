@@ -1,0 +1,66 @@
+[
+    {
+        "page": 1,
+        "table": [
+            [
+                "時間割\nコード",
+                "開講",
+                "授業科目名",
+                "担当教員",
+                "所属",
+                "曜限",
+                "対象"
+            ],
+            [
+                "30922",
+                "Ｓ",
+                "スペイン語上級\n（会話）",
+                "AIT\nMORENO\nIsaac",
+                "スペイン語",
+                "木 3",
+                "1年 文科 理科\n2年 文科 理科"
+            ],
+            [
+                "講義題目 El mundo hispano a través de las noticias de actualidad\n授業の目標概要 El primer objetivo de este curso es que los estudiantes amplíen y refuercen sus destrezas de conversación en español, a través del\ncomentario de las noticias de actualidad en el mundo hispano. Para ello, y con la guía del profesor, los alumnos transmitirán y\ncomentarán oralmente dichas noticias. Un segundo objetivo es que los estudiantes adquieran un conocimiento directo de la actualidad\npolítica, social y cultural del mundo hispano, a través de la lectura de la prensa de los diversos países que lo componen. Por último,\nse logrará que los alumnos mejoren su capacidad sintáctica, gramatical y de vocabulario.\n成績評価方法 -Participación en clase: 50%\n-Reportes escritos: 50%\n教科書 教科書は使用しない。／Will not use textbook\nガイダンス 特に行わない。／Will not conduct guidance",
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ]
+        ]
+    },
+    {
+        "page": 1,
+        "table": [
+            [
+                "時間割\nコード",
+                "開講",
+                "授業科目名",
+                "担当教員",
+                "所属",
+                "曜限",
+                "対象"
+            ],
+            [
+                "30864",
+                "Ｓ",
+                "スペイン語上級\n（作文）",
+                "AIT\nMORENO\nIsaac",
+                "スペイン語",
+                "木 2",
+                "1年 文科 理科\n2年 文科 理科"
+            ],
+            [
+                "講義題目 Redacción avanzada\n授業の目標概要 El primer objetivo de este curso es perfeccionar la expresión escrita de los estudiantes. Dado que se trata de un nivel avanzado, se\npone un especial énfasis en la redacción de textos de carácter académico. En segundo lugar, mediante la realización de las tareas de\nesta clase los alumnos reforzarán y aumentarán su dominio del vocabulario, la gramática y la sintaxis del español. Por último, los\nejercicios de redacción que se llevarán a cabo contribuirán a un mejor conocimiento de la cultura del mundo hispano.\n成績評価方法 -Tareas de clase: 50%\n-Examen: 50%\n教科書 教科書は使用しない。／Will not use textbook\nガイダンス 特に行わない。／Will not conduct guidance",
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ]
+        ]
+    }
+]

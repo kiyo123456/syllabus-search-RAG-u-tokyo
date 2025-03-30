@@ -1,0 +1,62 @@
+時間割                                   ーー                                          ー         ー
+開講              授業科目名                担当教員      所属     曜限
+
+31053                          英語中級                   大関 洋平
+
+文科 理科
+文科 理科
+
+講義題目          常生活におけるアルゴリズム
+授業の目標概要    本授業では、 日常生活におけるアルゴリズムに関する書籍である Algorithms to Live By を講読する。具体的には、停止
+問題、バンディット問題、時間計算量、キャッシュ、スケジューリング、ベイズの定理、過学習、   人  ランダム性、
+ネットワーキング、ゲーム理論などのトピックを扱う予定である。
+成績評価方法         掲示板のコメント・質問、担当章の講読、期末レポートを踏まえて、総合的に判断する。
+教科書                   次の教科書を使用する。プWill use the following textbook
+Brian Christian && Tom Griffiths
+Algorithms to Live By
+Henry Holt and Company
+特に行わない。 Will not conduct guidance
+
+時間割
+ュー      開講              授業科目名                担当教員              曜限
+五    4                                                         で
+
+B%               川 杉子
+
+文科 理科
+文科 理科
+
+31054                          英語
+
+講義題目         History Today を読む
+
+授業の目標概要     イギリスで出版されている歴史の教養雑誌 History Today に収録された小論文を読み、イギリスの文化・歴史を学ぶ。
+History Today については図書館に入っているので、参考にするとよい。
+
+また、テーマに関連した DVD などを視聴することもある。
+
+成績評価方法        毎回の小テスト および授業への参加度。
+
+教科書              プリントを配布する。プWill distribute handouts
+
+ガイダンス        特に行わない。 Will not conduct guidance
+
+時間害                          し、                                 回       凍
+開講                       授業科目名                          担当教員          所属        曜限
+
+31216                          英語中級                   大関 洋平
+
+文科 理科
+文科 理科
+
+講義題目        日常生活におけるアルゴリズム
+授業の目標概要    本授業では、 日常生活におけるアルゴリズムに関する書籍である Algorithms to Live By を講読する。具体的には、停止
+問題、バンディット問題、時間計算量、キャッシュ、スケジューリング、ベイズの定理、過学習、   人  ランダム性、
+ネットワーキング、ゲーム理論などのトピックを扱う予定である。
+成績評価方法         掲示板のコメント・質問、担当章の講読、期末レポートを踏まえて、総合的に判断する。
+教科書                   次の教科書を使用する。プWill use the following textbook
+Brian Christian && Tom Griffiths
+Algorithms to Live By
+Henry Holt and Company
+特に行わない。 Will not conduct guidance
+

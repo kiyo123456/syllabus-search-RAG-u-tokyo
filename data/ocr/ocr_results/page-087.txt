@@ -1,0 +1,107 @@
+初年次ゼミナール理科
+
+知能ソフトウェア工学への導入                     、
+理学部
+/Introduction to Intelligent Software Engineering
+
+成績評価方法
+
+授業のキーワード
+教科書
+
+This is an introductory lecture on intelligent software engineering and the basics of scientific research methodology mn this
+area. Nowadays, software has become the foundation of our society, acting as the key pillars that support the research and
+industrial domains. In this lecture, we wil, from the lens of diverse software sectors。 introduce the basic ways of conducting
+scientific research and learning cutting-edge knowledge and concepts in this speedy era. The topics we will cover in this
+lecture are extensive and broad, including quite a few key software areas, e.g., Al, machine learning, software engineering,
+etc.
+
+Evaluation is based on
+
+(1) Lecture Participation and Attendance (30%),
+
+(2) Student Presentation (30%)。
+
+(3) Final Report (40%)
+
+Society 30、 ソフトウェアエ    、機械学習
+に指示をする。    スス aa at class time
+
+(訳者)
+
+工学、サイバーフィジカルシステム
+
+う。ガイダンス教室については掲示板等で告知する。
+
+知能ロボット人入門        鳴海 拓志、中嶋 浩平     工学部
+
+成績評価方法
+授業のキーワード
+
+ロボットは、人間・機械・情報を結ぶ知的なシステムです。ロボットは、コンピュータ単体とは違って、自ら移
+動したり、 ものを動かしたりするこ とができます。 生物の仕組み、特に脳神経系の働きは、知的なロボットを
+作るヒントになります。一方、人間以上の速度やパワー、インターネット上の知識の利用など、生物を超え得
+る潜在力を持っています。
+この講義では、知能ロボットを構成する基本要素や知的な振る舞いの作り方を考え、学びます。
+ロボットキットを用いますが、講義の主眼はマニュアル通りロボットを組み立てることではなく、
+の能作とついて天際を運て深く考えるこ とです。最新のロボッ
+はなにか、現代社会で必要とされるロボット・システムとは何かを
+
+ツールとして
+知能ロボッ
+上研究の成信に も触れてもらい、知能と
+油してもらいます。また、工学的な思考
+
+に 2 作ったも のの狙いや価値をわかりやすく伝える技術を磨くことる期待しています。
+の目標 :
+
+ッットや知能といった未定義で学際           グループ討論や能動的な調査に
+論じることができるようになる
+工学の抽点から問題を発見し 実際の製作を通じてそれを解決するプロセスを身につける
+
+ののをを闘幸い、 適切に他人と分担して、複雑なシレステムであっても、順序立てて簡潔に説明できる能
+力を
+初年火ゼミナール理科の評価方法によって評価します。
+
+的なことがらに対して、                           基づいて和客観
+
+教科書
+
+問題発見・解決型、工学プ知能機械・ロボティクス、グループワーク、ものづくり、知的情報処理
+教科寺 は使用しない。 Will not use textbook
+
+導(ポ
+出版社
+ISBN
+
+その
+
+第 1
+
+。ガイダンス教室については掲示板等で告知する。
+
+近藤 武夫、本山 央人、      先端科学
+
+先端研究の現場を体験」する
+IGG     ]              都築 愉理         研究センター
+
+授業の目標・概要
+
+成績評価方法
+授業のキーワード
+教科書
+
+この授業では、先端科学技術研究センター (先端研) が位置する駒場リササーチキャンパスを舞台に、世界と競
+い合う最高水準の先端科学技術を体験してもらいます。最先端研究が、キャンバスの殻の中に閉じこもる旧来
+型の研究ではなく、 て全の人寿人会 の変化に機動的に挑戦して人間と社会に向かっていることを、この授業
+で実感できるはずです。 先端研の根更の研究領域(環境・エネルギー、 情報、 材料、生物医科学、バリアフリ
+病 、 社会 半の の中から、 2 つのテーマでの演習を行うことで、 研究の現場で行われている実際の方法論を体験
+こ学び
+
+初年次ゼミナール理科の評価方法によって評価します。
+航空宇宙モビリティ、超精密製造科学
+
+教科寺 は使用しない。 Will not use textbook
+
+。ガイダンス教室については掲示板等で告知する。
+

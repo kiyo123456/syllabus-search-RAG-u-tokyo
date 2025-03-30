@@ -1,0 +1,44 @@
+外国語 (英語二列 W)
+
+ALESS
+
+30255      火                       Ian Wash                                 年 理一(10)理二三(12.19)
+30236      火                    Francesco Cangemi                              年 理一(10)理二三(12.19)
+30237      火                 Jesus Alberto Pulido Arcas                           年 理一(10)理二三(12.19)
+30238      火                   Eric Vanden Bussche                             年 理一(10)理二三(12.19)
+30259      火                     Stefanie Mack                               年 理一(10)理二三(12.19)
+30260      火                      John Quayle                                年 理一(10)理二三(12.19)
+30261      火                  ディーエル グレゴリー                            年 理一(10)理二三(12.19)
+30536       水                       Eric Vanden Bussche                                      年 理一(6,22.32.38)
+30537     水                 Alexandra Terashima                            年 理一(6,22.32.38)
+30538     水                 Isaac Tyrone Ghampson                            年 理一(6,22.32.38)
+30539     水                   Elisa Ruiz-Tada                              年 理一(6,22.32.38)
+30540     水                    Tito Akindele                               年 理一(6,22.32.38)
+30541     水                     anuel Senna                               年 理一(6.22.32.38)
+30542     水                    John Quayle                               年 理一(6.22.32.38)
+30543       水                     ディーエル グレゴリー                                    年 理一(6.22.32.38)
+30544         水                          Jesus Alberto Pulido Arcas                                            年 理一(6,22.32.38)
+31032     金                   Naomi Berman                             1 年 理二三(5-6,18)
+31033      金                      Graham Peebles                                  1 年 理二三(3-6.18)
+31034       金                     John Solomon Maninang                                  1 年 理二三(3-6.18)
+31035     金                    Richard Dietz                              1年 理二三($-6.18)
+31036     金                    Stefanie Mack                              1年 理二三($-6.18)
+31037     金                 Kristopher McEown                            1 年 理二三(3-6.18)
+31146     金 3                  Leonard Sprague                               1 年 理二三(7.22)
+31147      金 3                    Graham Peebles                                   1 年
+
+31148     金 3                  Simon Pery                              1年 理二三(7.22)
+31149     金 3                  Naomi Berman                              1 年 理二三(7.22)
+31150     金 3                Christopher Nicklin                            1 年
+
+31151     金 3                  Tito Akindele                              1年 理二三(7.22)
+31186     金               Isaac Tyrone Ghampson                        年 理一(26.37)理二三(16.24)
+31187     金 4                  Stefanie Mack                           年 理一26.37)}     623④
+31188     金 4                 Christopher Nickim                          年 理一26.37)理二三(16.24)
+31189     金 4                 Leonard Sprague                          年 理一26.37)理二三(16.23)
+31190     金 4                  Tito Akindele                           年 理一26.37)}     6.24)
+31191     金 4                   John Quayle                            年 理一26.37)理二三(16.24)
+31192    金 4               Doris Zhang                       年 理一26.37)理二三(16.23)
+31194     金 4               John Solomon Maninang                         年 理一(26.37)      6,24)
+31195     金 4                  Richard Dietz                            年 理一26.37)理     6.24)
+

@@ -1,0 +1,19 @@
+<!-- templates/summary.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>要約結果</title>
+</head>
+<body>
+  <h1>講義一覧</h1>
+  <ul>
+    {% for lecture in lectures %}
+      <li><strong>{{ lecture.title }}</strong>（{{ lecture.professors }}）<br>
+        {{ lecture.description }}<br>
+        <em>{{ lecture.evaluation }}</em>
+      </li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

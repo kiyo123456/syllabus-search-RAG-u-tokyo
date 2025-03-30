@@ -1,0 +1,55 @@
+PEAK 科目
+時間割
+
+コード
+
+31207
+
+担当教員
+
+開間靖             プラメシッジシャ |                                   文科 叶科
+統計学                                              りお        3
+MM                イザク                     「                                 文科 理科
+
+授業の目標概要
+
+成績評価方法
+
+時間割
+
+コード
+
+31506
+
+PEAK Statistics
+
+To provide students with a basic knowledge of probability and statistics, and to introduce students to scientific programming using
+R, the statistical programming language.
+
+Class and Homework (30%), Exam (70%)
+
+教科書は使用しない。ノWill not use textbook
+
+特に行わない。 Will not conduct guidance
+
+担当教員
+
+文科 理科
+
+情報科学(PEAK)                      PEAK 前期                  文科 理科
+
+授業の目標概要
+
+成績評価方法
+
+Introduction to Al and data science
+
+This course is designed to give students the fundamental knowledge and practical training of Al (artificial intelligence) and data
+sclience techniques for intelligent processing, and how to apply them to real world problems.
+
+Assignments and class participation: 309%Midterm project: 30%Final project: 40%
+
+教科書は使用しない。 Will not use textbook
+
+第一回授業日に行う。 Will conduct guidance at first time
+
