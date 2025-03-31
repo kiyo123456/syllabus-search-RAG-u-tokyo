@@ -42,7 +42,7 @@
         <label class="block font-semibold">評価基準</label>
         <input type="text" id="evalCategory" placeholder="例: 平常点" class="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600 dark:text-white" />
         <label class="block font-semibold mt-2">パーセンテージ（％以上）</label>
-        <input type="number" id="evalPercentage" min="0" max="100" placeholder="例: 50" class="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600 dark:text-white" />
+        <input type="number" id="evalPercentage" min="0" max="100" step="10" placeholder="例: 50" class="w-full p-2 border rounded dark:bg-gray-700 dark:border-gray-600 dark:text-white" />
       </div>
 
       <div id="listFields" class="fieldGroup hidden col-span-full lg:col-span-1">
@@ -62,6 +62,7 @@
   </div>
 
   <script>
+
     function updateSearchFields() {
       const type = document.getElementById("searchType").value;
       document.getElementById("queryField").classList.add("hidden");
@@ -87,6 +88,13 @@
         document.documentElement.classList.add('dark');
       }
     };
+
+    // 修正箇所: Enterキーで検索を実行する関数を追加
+  function handleEnter(event) {
+    if (event.key === "Enter") {
+      searchSyllabus(); // Enterキーが押されたら検索を実行
+    }
+  }
 
     function searchSyllabus() {
       let query = document.getElementById("query").value;
@@ -137,6 +145,20 @@
         });
       });
     }
+
+    // 修正箇所: 検索フォーム全体に Enterキーのイベントリスナーを追加
+  window.onload = () => {
+    updateSearchFields();
+    if (localStorage.getItem('darkMode') === 'on') {
+      document.documentElement.classList.add('dark');
+    }
+
+    // Enterキーで検索を実行するイベントリスナーを追加
+    document.getElementById("query").addEventListener("keydown", handleEnter);
+    document.getElementById("listQuery").addEventListener("keydown", handleEnter);
+    document.getElementById("evalCategory").addEventListener("keydown", handleEnter);
+    document.getElementById("evalPercentage").addEventListener("keydown", handleEnter);
+  };
 
     // 修正箇所: 説明文の展開・折りたたみを切り替える関数
   function toggleDescription(descriptionId, buttonId) {

@@ -5,6 +5,7 @@ import json
 import numpy as np
 from sentence_transformers import SentenceTransformer
 import re  # 正規表現を使用
+import unicodedata  # 追加: 全角文字を半角に変換するために使用
 
 app = Flask(__name__)
 
@@ -65,10 +66,20 @@ class SyllabusVectorSearch:
         value = value.lower()
         return [entry for entry in self.data if key in entry and value in str(entry[key]).lower()]
 
+    # 追加: 全角文字を半角文字に変換する関数
+    def normalize_to_halfwidth(self, text):
+        """全角文字を半角文字に変換"""
+        return unicodedata.normalize('NFKC', text)
+
     def search_list(self, key, values):
-        """リスト検索（指定リストに1つでも該当するもの）"""
-        values_set = set(v.strip() for v in values)
-        return [entry for entry in self.data if key in entry and isinstance(entry[key], list) and values_set & set(entry[key])]
+        """リスト検索（指定リストに1つでも該当するもの、全角数字対応）"""
+        # 修正: 全角数字を半角数字に変換
+        values_set = set(self.normalize_to_halfwidth(v.strip()) for v in values)
+        results = [
+            entry for entry in self.data
+            if key in entry and isinstance(entry[key], list) and values_set & set(self.normalize_to_halfwidth(v) for v in entry[key])
+        ]
+        return results
 
     def search_word(self, query):
         """単語検索（大文字小文字無視、キーワードやタイトル、説明を対象）"""
