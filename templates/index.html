@@ -29,6 +29,7 @@
           <option value="list">曜日指定検索</option>
           <option value="word">キーワード検索</option>
           <option value="hyoka">成績評価で絞り込む</option>
+          <option value="code">コード番号検索</option> 
         </select>
       </div>
 
@@ -67,7 +68,7 @@
       document.getElementById("hyokaFields").classList.add("hidden");
       document.getElementById("listFields").classList.add("hidden");
 
-      if (["vector", "exact", "partial", "word"].includes(type)) {
+      if (["vector", "exact", "partial", "word", "code"].includes(type)) {
         document.getElementById("queryField").classList.remove("hidden");
       }
       if (type === "hyoka") document.getElementById("hyokaFields").classList.remove("hidden");
@@ -87,17 +88,6 @@
       }
     };
 
-    function toggleStorageList(id, type) {
-      let list = JSON.parse(localStorage.getItem(type)) || [];
-      if (list.includes(id)) {
-        list = list.filter(i => i !== id);
-      } else {
-        list.push(id);
-      }
-      localStorage.setItem(type, JSON.stringify(list));
-      searchSyllabus(); // 再描画
-    }
-
     function searchSyllabus() {
       let query = document.getElementById("query").value;
       let searchType = document.getElementById("searchType").value;
@@ -112,8 +102,6 @@
       })
       .then(res => res.json())
       .then(data => {
-        const favs = JSON.parse(localStorage.getItem("favorites") || "[]");
-        const mylist = JSON.parse(localStorage.getItem("mycourses") || "[]");
         const results = document.getElementById("results");
         results.innerHTML = "";
 
@@ -123,10 +111,6 @@
         }
 
         data.forEach((item, idx) => {
-          const id = `${item.title}_${item.professors}`;
-          const isFav = favs.includes(id);
-          const isMy = mylist.includes(id);
-
           const tags = [
             ...(item.yojigen || []),
             ...(item.departments || []),
@@ -138,37 +122,46 @@
 
           const score = item.score !== undefined ? `<span class="text-sm text-gray-500 dark:text-gray-300">スコア: ${item.score.toFixed(2)}</span>` : "";
 
+          const descriptionId = `description-${idx}`;
+          const moreButtonId = `more-button-${idx}`;
+
           results.innerHTML += `
-            <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 transition transform hover:scale-[1.02] duration-200 flex flex-col justify-between">
-              <div>
-                <div class="flex justify-between items-start mb-2">
-                  <h2 class="text-lg font-bold text-gray-800 dark:text-gray-100">📘 ${item.title}</h2>
-                  <div class="flex gap-2">
-                    <button onclick="toggleStorageList('${id}', 'favorites')" class="text-xl">${isFav ? '⭐️' : '☆'}</button>
-                    <button onclick="toggleStorageList('${id}', 'mycourses')" class="text-sm px-2 py-1 bg-yellow-100 dark:bg-yellow-700 text-yellow-900 dark:text-yellow-100 rounded">${isMy ? '✔ 履修済' : ' 履修追加'}</button>
-                  </div>
-                </div>
-                <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">👨‍🏫 ${item.professors || "教員不明"}</p>
-                <p class="text-sm text-gray-800 dark:text-gray-100 mb-2 line-clamp-3" id="desc-${idx}">${item.description}</p>
-                <button onclick="toggleDesc(${idx})" class="text-xs text-blue-600 dark:text-blue-300">▶ もっと見る</button>
-              </div>
-              <div class="flex flex-wrap gap-2 mt-2">
-                ${tags}${hyokaTags}
-                ${score}
-              </div>
-            </div>
+          <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 transition transform hover:scale-[1.02] duration-200">
+            <h2 class="text-lg font-bold">📘 ${item.title}</h2>
+            <p class="text-sm text-gray-600 dark:text-gray-300">👨‍🏫 ${item.professors || "教員不明"}</p>
+            <p id="${descriptionId}" class="text-sm text-gray-800 dark:text-gray-100 line-clamp-3 overflow-hidden">${item.description}</p>
+            <button id="${moreButtonId}" onclick="toggleDescription('${descriptionId}', '${moreButtonId}')" class="text-blue-600 dark:text-blue-400 text-sm mt-2">もっと見る</button>
+            <div class="flex flex-wrap gap-2 mt-2">${tags}${hyokaTags}${score}</div>
+          </div>
           `;
         });
       });
     }
 
-    function toggleDesc(index) {
-      const desc = document.getElementById(`desc-${index}`);
-      desc.classList.toggle("line-clamp-3");
+    // 修正箇所: 説明文の展開・折りたたみを切り替える関数
+  function toggleDescription(descriptionId, buttonId) {
+    const description = document.getElementById(descriptionId);
+    const button = document.getElementById(buttonId);
+
+    if (description.classList.contains("line-clamp-3")) {
+      description.classList.remove("line-clamp-3", "overflow-hidden");
+      button.textContent = "閉じる";
+    } else {
+      description.classList.add("line-clamp-3", "overflow-hidden");
+      button.textContent = "もっと見る";
     }
+  }
   </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
 
 
 

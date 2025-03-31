@@ -1,9 +1,10 @@
-import os  # ← これ忘れずに！
+import os
 from flask import Flask, request, render_template, jsonify
 import faiss
 import json
 import numpy as np
 from sentence_transformers import SentenceTransformer
+import re  # 正規表現を使用
 
 app = Flask(__name__)
 
@@ -29,6 +30,16 @@ class SyllabusVectorSearch:
         id_to_data = {i: self.data[i] for i in range(len(self.data))}
         return index, id_to_data
 
+    def format_description(self, description):
+        """説明文をフォーマットする"""
+        # 改行を <br> に変換
+        description = description.replace("\n", "<br>")
+        # 特定のキーワードを強調表示
+        keywords = ["目的", "概要", "目標", "注意"]
+        for keyword in keywords:
+            description = re.sub(f"({keyword})", r"<strong>\1</strong>", description)
+        return description
+
     def search_vector(self, query, top_k=5):
         query_embedding = self.model.encode([query], convert_to_numpy=True)
         distances, indices = self.index.search(query_embedding, top_k)
@@ -39,6 +50,7 @@ class SyllabusVectorSearch:
                 continue
             result = self.id_to_data[idx]
             result["score"] = float(distances[0][i])
+            result["description"] = self.format_description(result["description"])  # 説明文をフォーマット
             results.append(result)
 
         return sorted(results, key=lambda x: x["score"], reverse=False)
@@ -69,16 +81,24 @@ class SyllabusVectorSearch:
                 entry.get("description", "")
             ]).lower()
             if any(word in combined_text for word in words):
+                entry["description"] = self.format_description(entry["description"])  # 説明文をフォーマット
                 results.append(entry)
         return results
 
     def search_hyoka(self, eval_category, min_ratio):
         """成績評価検索"""
         return [entry for entry in self.data if "hyoka" in entry and entry["hyoka"].get(eval_category, 0) >= min_ratio]
+    
+    def search_code(self, code):
+        """code 番号で検索"""
+        results = [entry for entry in self.data if str(entry.get("code", "")).lower() == str(code).lower()]
+        for result in results:
+            result["description"] = self.format_description(result["description"])  # 説明文をフォーマット
+        return results
 
 
 # シラバス検索システムのセットアップ
-searcher = SyllabusVectorSearch("../syllabus_ai_project/data/json/ocr_result.json")
+searcher = SyllabusVectorSearch("syllabus_data.json")
 
 
 @app.route("/", methods=["GET"])
@@ -110,53 +130,12 @@ def search():
         if not eval_category or not eval_percentage:
             return jsonify({"error": "成績評価検索には評価基準とパーセンテージを入力してください。"})
         results = searcher.search_hyoka(eval_category, int(eval_percentage))
+    elif search_type == "code":
+        results = searcher.search_code(query)
     else:
         results = {"error": "無効な検索タイプ"}
 
     return jsonify(results)
 
-from werkzeug.utils import secure_filename
-from scripts.extract_and_summarize import process_pdf_to_json
-
-@app.route("/upload", methods=["GET", "POST"])
-def upload():
-    if request.method == "POST":
-        file = request.files["pdf"]
-        if not file:
-            return "ファイルがありません", 400
-
-        filename = secure_filename(file.filename)
-        save_path = os.path.join("data/pdf", filename)
-        file.save(save_path)
-
-        # Gemini要約実行（data/json に保存）
-        output_path = process_pdf_to_json(save_path)
-
-        return f"✅ 要約完了！<br><a href='/summary/{os.path.basename(output_path)}' target='_blank'>結果を見る</a>"
-
-
-    return '''
-        <h2>PDFアップロード</h2>
-        <form method="post" enctype="multipart/form-data">
-            <input type="file" name="pdf" accept=".pdf">
-            <input type="submit" value="要約開始">
-        </form>
-    '''
-
-@app.route("/summary/<filename>")
-def show_summary(filename):
-    json_path = os.path.join("data/json", filename)
-    try:
-        with open(json_path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-        return render_template("summary.html", lectures=data)
-    except Exception as e:
-        return f"エラー: {e}", 500
-
-
 if __name__ == "__main__":
     app.run(debug=True)
-
-
-
-
